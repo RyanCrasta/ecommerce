@@ -77,7 +77,7 @@ const isAuth = t.middleware(async ({ ctx, next }) => {
   try {
     payload = await decrypt(cookie.parse(ctx.headers.get("Cookie")).session);
   } catch (e) {
-    throw new TRPCError({ code: "UNAUTORIZED" });
+    throw new TRPCError({ code: "UNAUTHORIZED" });
   }
   console.log("payload", payload);
   return next({
