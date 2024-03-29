@@ -1,0 +1,105 @@
+#CatgoryContainer {
+  width: 36rem;
+  /* background-color: bisque; */
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3rem;
+
+  border-radius: 1rem;
+  border: 1px solid var(--darkgrey);
+}
+
+#CatgoryContainer h1 {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#helpingTextOne {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#helpingTextTwo {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.active {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.notActive {
+  color: var(--lightgrey);
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.checkbox[type="checkbox"] {
+  appearance: none;
+  background-color: var(--lightgrey);
+}
+
+.checkbox[type="checkbox"]:checked {
+  appearance: revert;
+  accent-color: rgb(0, 0, 0);
+}
+
+.controllers {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controllers button {
+  width: 1.8rem;
+}
+
+.rightBtn,
+.leftBtn {
+  position: relative;
+  cursor: pointer;
+}
+
+.rightBtn svg {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.leftBtn svg {
+  right: 1%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}

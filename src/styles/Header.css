@@ -1,0 +1,44 @@
+#headerContainer {
+  padding: 2rem 0;
+}
+
+#quickActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 0 2rem 1rem 2rem;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navItem {
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+#logoName {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+#actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#promotion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--grey);
+  margin-top: 1rem;
+  font-weight: 500;
+}

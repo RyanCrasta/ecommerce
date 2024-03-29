@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Earbuds"
+  },
+  {
+    "id": 2,
+    "name": "Men's Casual Watch"
+  },
+  {
+    "id": 3,
+    "name": "Ceramic Non-Stick Cookware Set"
+  },
+  {
+    "id": 4,
+    "name": "Portable External Hard Drive"
+  },
+  {
+    "id": 5,
+    "name": "Women's Running Shoes"
+  },
+  {
+    "id": 6,
+    "name": "Smartphone Case"
+  },
+  {
+    "id": 7,
+    "name": "Men's Slim Fit Jeans"
+  },
+  {
+    "id": 8,
+    "name": "Coffee Maker"
+  },
+  {
+    "id": 9,
+    "name": "Wireless Gaming Mouse"
+  },
+  {
+    "id": 10,
+    "name": "Yoga Mat"
+  },
+  {
+    "id": 11,
+    "name": "Wireless Charging Pad"
+  },
+  {
+    "id": 12,
+    "name": "Women's Crossbody Bag"
+  },
+  {
+    "id": 13,
+    "name": "Stainless Steel Water Bottle"
+  },
+  {
+    "id": 14,
+    "name": "Digital Alarm Clock"
+  },
+  {
+    "id": 15,
+    "name": "Women's Lightweight Jacket"
+  },
+  {
+    "id": 16,
+    "name": "Stainless Steel Mixing Bowls"
+  },
+  {
+    "id": 17,
+    "name": "Bluetooth Speaker"
+  },
+  {
+    "id": 18,
+    "name": "Men's Leather Wallet"
+  },
+  {
+    "id": 19,
+    "name": "Electric Toothbrush"
+  },
+  {
+    "id": 20,
+    "name": "Fitness Tracker Watch"
+  },
+  {
+    "id": 21,
+    "name": "Wireless Noise-Canceling Headphones"
+  },
+  {
+    "id": 22,
+    "name": "Women's Fashion Sneakers"
+  },
+  {
+    "id": 23,
+    "name": "Stainless Steel Kitchen Knife Set"
+  },
+  {
+    "id": 24,
+    "name": "Camping Tent"
+  },
+  {
+    "id": 25,
+    "name": "Portable Power Bank"
+  },
+  {
+    "id": 26,
+    "name": "Men's Classic Dress Shirt"
+  },
+  {
+    "id": 27,
+    "name": "Digital Kitchen Scale"
+  },
+  {
+    "id": 28,
+    "name": "Resistance Bands Set"
+  },
+  {
+    "id": 29,
+    "name": "Wireless Keyboard and Mouse Combo"
+  },
+  {
+    "id": 30,
+    "name": "Women's Yoga Leggings"
+  },
+  {
+    "id": 31,
+    "name": "Air Fryer"
+  },
+  {
+    "id": 32,
+    "name": "Fitness Jump Rope"
+  },
+  {
+    "id": 33,
+    "name": "Wireless Security Camera System"
+  },
+  {
+    "id": 34,
+    "name": "Men's Waterproof Jacket"
+  },
+  {
+    "id": 35,
+    "name": "Stainless Steel Insulated Travel Mug"
+  },
+  {
+    "id": 36,
+    "name": "Running Belt Waist Pack"
+  },
+  {
+    "id": 37,
+    "name": "Wireless Earbuds Charging Case"
+  },
+  {
+    "id": 38,
+    "name": "Women's Denim Jacket"
+  },
+  {
+    "id": 39,
+    "name": "Slow Cooker"
+  },
+  {
+    "id": 40,
+    "name": "Hydration Backpack"
+  },
+  {
+    "id": 41,
+    "name": "Wireless Charging Stand"
+  },
+  {
+    "id": 42,
+    "name": "Men's Leather Belt"
+  },
+  {
+    "id": 43,
+    "name": "Portable Blender"
+  },
+  {
+    "id": 44,
+    "name": "Yoga Block Set"
+  },
+  {
+    "id": 45,
+    "name": "Bluetooth FM Transmitter"
+  },
+  {
+    "id": 46,
+    "name": "Women's Fleece Jacket"
+  },
+  {
+    "id": 47,
+    "name": "Stainless Steel Mixing Spoon Set"
+  },
+  {
+    "id": 48,
+    "name": "Cycling Helmet"
+  },
+  {
+    "id": 49,
+    "name": "Portable External SSD"
+  },
+  {
+    "id": 50,
+    "name": "Men's Slim Fit Chinos"
+  },
+  {
+    "id": 51,
+    "name": "Stainless Steel Water Filter Pitcher"
+  },
+  {
+    "id": 52,
+    "name": "Resistance Loop Bands"
+  },
+  {
+    "id": 53,
+    "name": "Wireless Charging Car Mount"
+  },
+  {
+    "id": 54,
+    "name": "Women's Waterproof Hiking Boots"
+  },
+  {
+    "id": 55,
+    "name": "Electric Kettle"
+  },
+  {
+    "id": 56,
+    "name": "Running Hydration Belt"
+  },
+  {
+    "id": 57,
+    "name": "Wireless Charging Pad with Night Light"
+  },
+  {
+    "id": 58,
+    "name": "Women's Active Leggings"
+  },
+  {
+    "id": 59,
+    "name": "Air Purifier"
+  },
+  {
+    "id": 60,
+    "name": "Camping Sleeping Bag"
+  },
+  {
+    "id": 61,
+    "name": "Bluetooth Wireless Headphones"
+  },
+  {
+    "id": 62,
+    "name": "Women's High-Waisted Jeans"
+  },
+  {
+    "id": 63,
+    "name": "Digital Meat Thermometer"
+  },
+  {
+    "id": 64,
+    "name": "Running Hydration Vest"
+  },
+  {
+    "id": 65,
+    "name": "Wireless Charging Dock"
+  },
+  {
+    "id": 66,
+    "name": "Women's Active Tank Top"
+  },
+  {
+    "id": 67,
+    "name": "Portable Espresso Maker"
+  },
+  {
+    "id": 68,
+    "name": "Men's Hooded Sweatshirt"
+  },
+  {
+    "id": 69,
+    "name": "Wireless In-Ear Sports Headphones"
+  },
+  {
+    "id": 70,
+    "name": "Smart Wi-Fi Thermostat"
+  },
+  {
+    "id": 71,
+    "name": "Women's Waterproof Rain Jacket"
+  },
+  {
+    "id": 72,
+    "name": "Wireless Security Alarm System"
+  },
+  {
+    "id": 73,
+    "name": "Men's Casual Sneakers"
+  },
+  {
+    "id": 74,
+    "name": "Air Fryer Toaster Oven"
+  },
+  {
+    "id": 75,
+    "name": "Wireless Charging Power Strip"
+  },
+  {
+    "id": 76,
+    "name": "Women's Classic Trench Coat"
+  },
+  {
+    "id": 77,
+    "name": "Stainless Steel French Press"
+  },
+  {
+    "id": 78,
+    "name": "Running Waist Pack with Water Bottle"
+  },
+  {
+    "id": 79,
+    "name": "Wireless Charging Bedside Lamp"
+  },
+  {
+    "id": 80,
+    "name": "Women's Yoga Crop Top"
+  },
+  {
+    "id": 81,
+    "name": "Digital Bathroom Scale"
+  },
+  {
+    "id": 82,
+    "name": "Camping Cookware Set"
+  },
+  {
+    "id": 83,
+    "name": "Wireless Charging Mouse"
+  },
+  {
+    "id": 84,
+    "name": "Women's Cross Training Shoes"
+  },
+  {
+    "id": 85,
+    "name": "Programmable Coffee Maker"
+  },
+  {
+    "id": 86,
+    "name": "Adjustable Dumbbell Set"
+  },
+  {
+    "id": 87,
+    "name": "Wireless Charging Alarm Clock"
+  },
+  {
+    "id": 88,
+    "name": "Men's Polarized Sunglasses"
+  },
+  {
+    "id": 89,
+    "name": "Portable Electric Grill"
+  },
+  {
+    "id": 90,
+    "name": "Stainless Steel Coffee Grinder"
+  },
+  {
+    "id": 91,
+    "name": "Electric Milk Frother"
+  },
+  {
+    "id": 92,
+    "name": "Cold Brew Coffee Maker"
+  },
+  {
+    "id": 93,
+    "name": "Pour Over Coffee Dripper"
+  },
+  {
+    "id": 94,
+    "name": "Espresso Shot Glasses"
+  },
+  {
+    "id": 95,
+    "name": "Smart Wi-Fi Light Bulb"
+  },
+  {
+    "id": 96,
+    "name": "Leather Messenger Bag"
+  },
+  {
+    "id": 97,
+    "name": "Bluetooth Shower Speaker"
+  },
+  {
+    "id": 98,
+    "name": "Electric Wine Aerator"
+  },
+  {
+    "id": 99,
+    "name": "Hiking Backpack"
+  },
+  {
+    "id": 100,
+    "name": "Wireless Bluetooth Speaker"
+  }
+]
