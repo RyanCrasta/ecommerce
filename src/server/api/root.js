@@ -3,7 +3,7 @@ import {
   createTRPCRouter,
   privateProcedure,
   publicProcedure,
-} from "~/server/api/trpc";
+} from "./trpc";
 import { z } from "zod";
 import dummyData from "dummyData/users";
 import CategoriesData from "dummyData/categories.json";
