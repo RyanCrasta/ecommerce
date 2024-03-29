@@ -27,6 +27,7 @@ export default function Dashboard() {
     isUserLogIn(Cookies.get("session"))
       .then(async () => {
         if (!ignore) {
+          // @ts-ignore
           const fAns = await client.secretData.query();
           console.log("fAns", fAns);
           // clickMe();
@@ -58,6 +59,7 @@ export default function Dashboard() {
   const nextHandler = () => {
     setCurrentPage(currentPage + 1);
     console.log("start", start);
+    // @ts-ignore
     if ((start + 6) * 6 <= total) {
       console.log("kkkkkkkkkkkkkkk");
       setStart((s) => {
@@ -70,23 +72,30 @@ export default function Dashboard() {
     let skip = (currentPage - 1) * 6;
     setDisplayCategory(categoriesData.slice(skip, skip + 6));
 
+    // @ts-ignore
     let newCheckArr = [];
     categoriesData.slice(skip, skip + 6).map((ele) => {
+      // @ts-ignore
       if (JSON.parse(localStorage.getItem("checkedItem")).includes(ele.id)) {
         newCheckArr.push(true);
       } else {
         newCheckArr.push(false);
       }
     });
+    // @ts-ignore
     console.log("newCheckArr", newCheckArr);
+    // @ts-ignore
     const chu = JSON.parse(JSON.stringify(newCheckArr));
     setDefaultCheckValue(chu);
   }, [currentPage]);
 
+  // @ts-ignore
   const storeCheckInLocalStorage = (id) => {
+    // @ts-ignore
     const newArr = JSON.parse(localStorage.getItem("checkedItem"));
     let alreadyPresent = false;
 
+    // @ts-ignore
     newArr.some((productId, index) => {
       if (productId === id) {
         alreadyPresent = true;
@@ -102,21 +111,27 @@ export default function Dashboard() {
     }
     let skip = (currentPage - 1) * 6;
 
+    // @ts-ignore
     let newCheckArr = [];
     categoriesData.slice(skip, skip + 6).map((ele) => {
+      // @ts-ignore
       if (JSON.parse(localStorage.getItem("checkedItem")).includes(ele.id)) {
         newCheckArr.push(true);
       } else {
         newCheckArr.push(false);
       }
     });
+    // @ts-ignore
     console.log("newCheckArr", newCheckArr);
+    // @ts-ignore
     const chu = JSON.parse(JSON.stringify(newCheckArr));
     setDefaultCheckValue(chu);
   };
 
+  // @ts-ignore
   const isChecked = (id) => {
     console.log("asas", localStorage.getItem("checkedItem"), id);
+    // @ts-ignore
     if (JSON.parse(localStorage.getItem("checkedItem")).includes(id)) {
       return true;
     } else {
@@ -133,15 +148,25 @@ export default function Dashboard() {
       <ul>
         {displayCategory.map((ele, ind) => {
           return (
-            <li id={ele.id}>
+            <li
+              id={
+                // @ts-ignore
+                ele.id
+              }
+            >
               <input
                 type="checkbox"
                 className="checkbox"
+                // @ts-ignore
                 onChange={() => storeCheckInLocalStorage(ele.id)}
+                // @ts-ignore
                 checked={isChecked(ele.id)}
               />
               <span className="checkmark"></span>
-              {ele.name}
+              {
+                // @ts-ignore
+                ele.name
+              }
               {console.log("moon", defaultCheckValue[ind])}
             </li>
           );
@@ -222,7 +247,9 @@ export default function Dashboard() {
             {start + 6}
           </button>
 
-          {currentPage * 6 <= total && (
+          {currentPage * 6 <=
+            // @ts-ignore
+            total && (
             <span className="rightBtn" onClick={nextHandler}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

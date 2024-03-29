@@ -1,15 +1,14 @@
 import { SignJWT, jwtVerify } from "jose";
-import { NextRequest, NextResponse } from "next/server";
 import Cookies from "js-cookie";
-import { TRPCError } from "@trpc/server";
-import { env } from "process";
-// import { api } from "~/trpc/server";
 
 const secretKey = process.env.SECRET_CODE;
 const key = new TextEncoder().encode(secretKey);
 
 console.log("secretKey", key);
 
+/**
+ * @param {import("jose").JWTPayload | undefined} payload
+ */
 export async function encrypt(payload) {
   return await new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
@@ -18,12 +17,12 @@ export async function encrypt(payload) {
     .sign(key);
 }
 
+// @ts-ignore
 export async function login({ email, password }) {
   // Verify credentials && get the user
   // console.log("formData", formData);
   const user = { email, password };
   // const hello = await api.login({ email, password });
-  console.log("hello", hello);
   // Create the session
   const expires = new Date(Date.now() + 1000 * 100000);
   const session = await encrypt({ user, expires });
@@ -34,6 +33,9 @@ export async function login({ email, password }) {
   // cookies().set("session", session, { expires, httpOnly: true });
 }
 
+/**
+ * @param {string | Uint8Array} input
+ */
 export async function decrypt(input) {
   try {
     const { payload } = await jwtVerify(input, key, {
@@ -41,12 +43,15 @@ export async function decrypt(input) {
     });
     return payload;
   } catch (error) {
-    throw new Error("gadbad", error);
+    throw new Error("gadbad");
   }
 }
 
-export const isUserLogIn = async (jwtToken) => {
+export const isUserLogIn = async (
+  /** @type {string | Uint8Array | undefined} */ jwtToken
+) => {
   try {
+    // @ts-ignore
     return await decrypt(jwtToken);
   } catch (e) {
     return Promise.reject();

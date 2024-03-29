@@ -31,7 +31,9 @@ export default function Register() {
     });
   }, []);
 
-  const createAccountHandler = (e) => {
+  const createAccountHandler = (
+    /** @type {{ preventDefault: () => void; }} */ e
+  ) => {
     e.preventDefault();
     console.log(username, email, password);
 
@@ -41,7 +43,6 @@ export default function Register() {
       password.trim().length > 0
     ) {
       setIsInputsCorrect(true);
-      // router.push("/dashboard");
     } else {
       setIsInputsCorrect(false);
     }
@@ -57,6 +58,7 @@ export default function Register() {
       codeSix +
       codeSeven +
       codeEight;
+    // @ts-ignore
     const fAns = await client.emailCheck.query({ json: { code, email } });
 
     console.log("cccoooodddddeeee", fAns);
@@ -127,42 +129,42 @@ export default function Register() {
             <div>
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeOne(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeTwo(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeThree(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeFour(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeFive(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeSix(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeSeven(e.target.value)}
               />
               <input
                 type="text"
-                maxLength="1"
+                maxLength={1}
                 onChange={(e) => setCodeEight(e.target.value)}
               />
             </div>
