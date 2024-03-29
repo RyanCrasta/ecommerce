@@ -1,11 +1,13 @@
 import { decrypt } from "lib";
 
+export const isUserLogIn = async (
+  /** @type {string | Uint8Array} */ jwtToken
+) => {
+  let payload = undefined;
 
-export const isUserLogIn = async (jwtToken) => {
-
-    let payload = undefined;
-
-    try {
-        payload = await decrypt(jwtToken)
-    }
-}
+  try {
+    payload = await decrypt(jwtToken);
+  } catch (e) {
+    throw new Error("ERROR");
+  }
+};
