@@ -1,12 +1,12 @@
-import {
-  createCallerFactory,
-  createTRPCRouter,
-  privateProcedure,
-  publicProcedure,
-} from "./trpc";
 import { z } from "zod";
 import dummyData from "dummyData/users";
 import CategoriesData from "dummyData/categories.json";
+import {
+  createTRPCRouter,
+  publicProcedure,
+  privateProcedure,
+  createCallerFactory,
+} from "~/server/api/trpc";
 
 /**
  * This is the primary router for your server.
