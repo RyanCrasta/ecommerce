@@ -1,4 +1,4 @@
-import { decrypt } from "lib.js";
+import { decrypt } from "lib.cjs";
 
 export const isUserLogIn = async (
   /** @type {string | Uint8Array} */ jwtToken
