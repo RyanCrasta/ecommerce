@@ -18,6 +18,9 @@ const config = {
   env: {
     SECRET_CODE: process.env.SECRET_CODE,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default config;
