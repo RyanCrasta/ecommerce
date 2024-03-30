@@ -1,9 +1,7 @@
 "use client";
 
-// @ts-ignore
 import { useContext, useEffect, useState } from "react";
 import "~/styles/Login.css";
-// @ts-ignore
 import { encrypt, isUserLogIn } from "lib.cjs";
 import { client } from "../_trpc/client";
 import Cookies from "js-cookie";
@@ -13,7 +11,6 @@ import UserContext from "utils/userContext";
 export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // @ts-ignore
   const router = useRouter();
   const { setLoggedIn, loggedIn } = useContext(UserContext);
   const [btnClicked, setBtnClicked] = useState(false);
@@ -33,12 +30,9 @@ export function Login() {
       const response = await client.login.query({ json: { email, password } });
 
       if (response.json.check) {
-        const expires = new Date(Date.now() + 1000 * 100000);
         const user = { email, password };
-        // @ts-ignore
-        const session = await encrypt(user, expires);
+        const session = await encrypt(user);
         Cookies.set("session", session);
-        // @ts-ignore
         setLoggedIn(true);
         router.push("/dashboard");
         setBtnClicked(true);
@@ -47,12 +41,10 @@ export function Login() {
           localStorage.setItem("checkedItem", JSON.stringify([]));
         }
       } else {
-        // @ts-ignore
         setLoggedIn(false);
         setBtnClicked(true);
       }
     } else {
-      // @ts-ignore
       setLoggedIn(false);
       setBtnClicked(true);
     }

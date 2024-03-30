@@ -17,7 +17,6 @@ const createContext = async (/** @type {{ headers: any; }} */ req) => {
 const handler = (/** @type { Request | NextRequest } */ req) =>
   fetchRequestHandler({
     endpoint: "/api/trpc",
-    // @ts-ignore
     req,
     router: appRouter,
     createContext: () => createContext(req),

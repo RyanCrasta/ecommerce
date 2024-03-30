@@ -34,7 +34,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <link rel="icon" href="/images/favicon.png" sizes="any" />
 
-        {/* @ts-ignore */}
         <UserContext.Provider value={{ loggedIn, setLoggedIn }}>
           <Header />
           <TRPCReactProvider>{children}</TRPCReactProvider>

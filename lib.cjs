@@ -1,6 +1,4 @@
 import { SignJWT, jwtVerify } from "jose";
-import Cookies from "js-cookie";
-
 const secretKey = process.env.SECRET_CODE;
 const key = new TextEncoder().encode(secretKey);
 
@@ -11,16 +9,8 @@ export async function encrypt(payload) {
   return await new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime("2h")
+    .setExpirationTime("4h")
     .sign(key);
-}
-
-// @ts-ignore
-export async function login({ email, password }) {
-  const user = { email, password };
-  const expires = new Date(Date.now() + 1000 * 100000);
-  const session = await encrypt({ user, expires });
-  Cookies.set("session", session);
 }
 
 /**
@@ -41,8 +31,7 @@ export const isUserLogIn = async (
   /** @type {string | Uint8Array | undefined} */ jwtToken
 ) => {
   try {
-    // @ts-ignore
-    return await decrypt(jwtToken);
+    return await decrypt(jwtToken ?? "");
   } catch (e) {
     return Promise.reject();
   }

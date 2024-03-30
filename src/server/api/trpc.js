@@ -74,7 +74,6 @@ export const createCallerFactory = t.createCallerFactory;
  */
 
 const isAuth = t.middleware(async ({ ctx, next }) => {
-  // @ts-ignore
   let payload = undefined;
   try {
     payload = await decrypt(

@@ -38,7 +38,7 @@
     ".next/types/**/*.ts",
     "src/app/page.jsx",
     "src/app/register/page.jsx",
-    "src/app/_trpc/Provider.jsx",
+    "src/app/_trpc/Provider.tsx",
     "src/env.mjs",
     "next.config.mjs"
   ],

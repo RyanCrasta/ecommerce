@@ -24,7 +24,6 @@ export function Header() {
     Cookies.remove("session");
     router.push("/login");
     setIsLoggedIn(false);
-    // @ts-ignore
     setLoggedIn(false);
   };
 
