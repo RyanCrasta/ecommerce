@@ -17,9 +17,13 @@ export function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
-    isUserLogIn(Cookies.get("session")).then(() => {
-      router.push("/dashboard");
-    });
+    isUserLogIn(Cookies.get("session"))
+      .then(() => {
+        router.push("/dashboard");
+      })
+      .catch(() => {
+        router.push("/");
+      });
   }, []);
 
   // @ts-ignore

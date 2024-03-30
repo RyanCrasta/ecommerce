@@ -25,9 +25,13 @@ export function Register() {
   const router = useRouter();
 
   useEffect(() => {
-    isUserLogIn(Cookies.get("session")).then(() => {
-      router.push("/dashboard");
-    });
+    isUserLogIn(Cookies.get("session"))
+      .then(() => {
+        router.push("/dashboard");
+      })
+      .catch(() => {
+        router.push("/register");
+      });
   }, []);
 
   const createAccountHandler = (
