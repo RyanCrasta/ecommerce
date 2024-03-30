@@ -38,7 +38,9 @@
     ".next/types/**/*.ts",
     "src/app/page.jsx",
     "src/app/register/page.jsx",
-    "src/app/_trpc/Provider.jsx"
+    "src/app/_trpc/Provider.jsx",
+    "src/env.mjs",
+    "next.config.mjs"
   ],
   "exclude": ["node_modules"]
 }
