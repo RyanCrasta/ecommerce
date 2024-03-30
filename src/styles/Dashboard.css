@@ -47,7 +47,7 @@ ul li {
   font-weight: 600;
 }
 
-button {
+.controllers button {
   cursor: pointer;
   background-color: #fff;
   border: none;
@@ -102,4 +102,19 @@ button {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 656px) {
+  #CatgoryContainer {
+    padding: 1.5rem;
+    width: unset;
+    margin: 0 1.8rem;
+    margin-bottom: 1.8rem;
+    position: static;
+    transform: translateX(0);
+  }
+
+  .controllers button {
+    margin: 2px;
+  }
 }

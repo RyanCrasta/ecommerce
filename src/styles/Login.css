@@ -1,20 +1,10 @@
 #loginForm {
   display: flex;
   flex-direction: column;
-  width: 31%;
+  min-width: 31%;
   border-radius: 1rem;
   padding: 3rem;
   border: 1px solid var(--darkgrey);
-  height: 64vh;
-}
-
-#emailVerifyForm {
-  width: 31%;
-  height: 45vh;
-  text-align: center;
-  padding: 0 3rem;
-  border: 1px solid var(--darkgrey);
-  border-radius: 1rem;
 }
 
 #headerText {
@@ -73,7 +63,24 @@
   margin-top: 0.5rem;
 }
 
-#ctaAccount {
+#password {
+  width: 100%;
+}
+
+#passwordContainer {
+  position: relative;
+}
+
+#showPassword {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+  transform: translateY(-50%);
+  border-bottom: 1px solid var(--black);
+  cursor: pointer;
+}
+
+#ctaLogin {
   width: 100%;
   background-color: var(--black);
   color: var(--white);
@@ -133,4 +140,16 @@
 #errorMsg {
   margin-top: 2rem;
   color: var(--red);
+}
+
+@media only screen and (max-width: 517px) {
+  #loginForm {
+    margin: 0 1.8rem;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #loginBtn {
+    margin-left: 0.5rem;
+  }
 }

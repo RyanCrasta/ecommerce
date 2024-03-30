@@ -2,7 +2,7 @@ import Link from "next/link";
 import "../../styles/Header.css";
 import { isUserLogIn } from "lib.cjs";
 import Cookies from "js-cookie";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 import UserContext from "utils/userContext";
 
@@ -37,8 +37,7 @@ export function Header() {
       </div>
       <div id="header">
         <h1 id="logoName">ecommerce</h1>
-
-        <div>
+        <div id="mainNav">
           <Link className="navItem" href="">
             Categories
           </Link>
@@ -49,7 +48,7 @@ export function Header() {
             Clearance
           </Link>
           <Link className="navItem" href="">
-            Clearance
+            New stock
           </Link>
           <Link className="navItem" href="">
             Trending
@@ -58,9 +57,17 @@ export function Header() {
 
         <div id="actions">
           {isLoggedIn ? (
-            <button onClick={logOutHandler}>Logout</button>
+            <button
+              className="actionHandler"
+              id="btnLogout"
+              onClick={logOutHandler}
+            >
+              Logout
+            </button>
           ) : (
-            <Link href="/login">Login</Link>
+            <Link className="actionHandler" href="/login">
+              Login
+            </Link>
           )}
 
           <svg

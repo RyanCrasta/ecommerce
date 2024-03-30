@@ -1,5 +1,5 @@
 import { z } from "zod";
-import dummyData from "dummyData/users";
+import usersData from "dummyData/users.json";
 import CategoriesData from "dummyData/categories.json";
 import {
   createTRPCRouter,
@@ -28,9 +28,8 @@ export const appRouter = createTRPCRouter({
       })
     )
     .query(({ input }) => {
-      console.log("dummyData", dummyData);
       let isLoginCredCorrect = false;
-      dummyData.some((obj) => {
+      usersData.some((obj) => {
         if (obj.email === input.email && obj.password === input.password) {
           isLoginCredCorrect = true;
           return true;
@@ -43,7 +42,7 @@ export const appRouter = createTRPCRouter({
         password: input.password,
       };
     }),
-  secretData: privateProcedure.query(() => {
+  categoriesData: privateProcedure.query(() => {
     return CategoriesData;
   }),
   emailCheck: publicProcedure

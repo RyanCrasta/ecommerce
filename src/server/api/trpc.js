@@ -75,7 +75,6 @@ export const createCallerFactory = t.createCallerFactory;
 
 const isAuth = t.middleware(async ({ ctx, next }) => {
   // @ts-ignore
-  console.log("WATER", cookie.parse(ctx.headers.get("Cookie") ?? "").session);
   let payload = undefined;
   try {
     payload = await decrypt(
@@ -85,7 +84,6 @@ const isAuth = t.middleware(async ({ ctx, next }) => {
   } catch (e) {
     throw new TRPCError({ code: "UNAUTHORIZED" });
   }
-  console.log("payload", payload);
   return next({
     ctx: {
       payload,

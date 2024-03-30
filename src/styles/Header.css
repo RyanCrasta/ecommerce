@@ -2,6 +2,21 @@
   padding: 2rem 0;
 }
 
+#btnLogout {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+.actionHandler {
+  width: 4rem;
+  text-align: end;
+}
+
 #quickActions {
   display: flex;
   align-items: center;
@@ -41,4 +56,18 @@
   background-color: var(--grey);
   margin-top: 1rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 993px) {
+  #header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 581px) {
+  #mainNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }

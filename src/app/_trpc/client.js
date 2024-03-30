@@ -1,8 +1,4 @@
-import {
-  createTRPCClient,
-  createTRPCReact,
-  httpBatchLink,
-} from "@trpc/react-query";
+import { createTRPCClient, httpBatchLink } from "@trpc/react-query";
 
 export const client = createTRPCClient({
   links: [

@@ -1,23 +1,16 @@
 #registerForm {
-  /* background-color: bisque; */
   display: flex;
   flex-direction: column;
-
-  width: 31%;
+  min-width: 31%;
   border-radius: 1rem;
   padding: 3rem;
   border: 1px solid var(--darkgrey);
-
-  height: 80vh;
 }
 
 #emailVerifyForm {
-  width: 31%;
-  height: 50vh;
-  /* background-color: bisque; */
+  width: 36rem;
   text-align: center;
   padding: 0 3rem;
-
   border: 1px solid var(--darkgrey);
   border-radius: 1rem;
 }
@@ -106,12 +99,13 @@
   font-weight: 500;
 }
 
-#verifyCode {
+#verifyRegisterCode {
   width: 100%;
   background-color: var(--black);
   color: var(--white);
   padding: 1.2rem 0;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   outline: 0;
   border: 0;
   border-radius: 0.38rem;
@@ -120,9 +114,33 @@
 }
 
 #message {
-  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+#loginLink {
+  border-bottom: 1px solid var(--black);
 }
 
 .errorMsg {
   color: var(--red);
+}
+
+@media only screen and (max-width: 568px) {
+  #emailVerifyForm {
+    padding: 1.5rem;
+    margin: 0 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  #registerForm {
+    margin: 0 1.8rem;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #formHeader {
+    font-size: 1.5rem;
+  }
 }

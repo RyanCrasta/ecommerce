@@ -32,6 +32,8 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={inter.className}>
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
+
         {/* @ts-ignore */}
         <UserContext.Provider value={{ loggedIn, setLoggedIn }}>
           <Header />
