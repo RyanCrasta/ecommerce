@@ -4,7 +4,7 @@
 import { use, useContext, useEffect, useState } from "react";
 import "~/styles/Login.css";
 // @ts-ignore
-import { encrypt, isUserLogIn, login } from "lib.js";
+import { encrypt, isUserLogIn, login } from "lib.cjs";
 import { client } from "../_trpc/client";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
