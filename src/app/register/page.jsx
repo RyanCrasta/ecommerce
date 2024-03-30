@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import "~/styles/Register.css";
 import { useRouter } from "next/navigation";
-import { isUserLogIn } from "lib";
+import { isUserLogIn } from "lib.cjs";
 import Cookies from "js-cookie";
 import { client } from "../_trpc/client";
 

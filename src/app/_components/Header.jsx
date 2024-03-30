@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "../../styles/Header.css";
-import { isUserLogIn } from "lib";
+import { isUserLogIn } from "lib.cjs";
 import Cookies from "js-cookie";
 import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";

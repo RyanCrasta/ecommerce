@@ -10,7 +10,7 @@ import { TRPCError, initTRPC } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
 import cookie from "cookie";
-import { decrypt } from "lib";
+import { decrypt } from "lib.cjs";
 
 /**
  * 1. CONTEXT
