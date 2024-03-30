@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
-import { isUserLogIn } from "lib";
+import { isUserLogIn } from "lib.cjs";
 import { client } from "../_trpc/client";
 import { useEffect, useState } from "react";
 import "../../styles/Dashboard.css";
