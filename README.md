@@ -9,5 +9,10 @@
 - ryan.crasta@yahoo.com/abc123
 - joe@gmail.com/def456
 - pari@gmail.com/ght234
+- 
+## How to run?
+- Install node version > 18
+- Run npm install
+- Run npm run dev
   
 Project link: https://the-only-ecommerce.netlify.app/
