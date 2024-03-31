@@ -9,3 +9,5 @@
 - ryan.crasta@yahoo.com/abc123
 - joe@gmail.com/def456
 - pari@gmail.com/ght234
+  
+Project link: https://the-only-ecommerce.netlify.app/
